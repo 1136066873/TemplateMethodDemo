@@ -6,7 +6,7 @@ package com.heguodong.template;
 
 public abstract class AbstractPerson {
 
-    public void prepareGotoSchool() {
+    public final void prepareGotoSchool() {//使用final 修饰，防止算法框架被覆写
         dressUp();
         eatBreakfast();
         takeThings();
